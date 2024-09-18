@@ -1,0 +1,169 @@
+<html>
+    <head>
+        <base href="https://flowerknows.com">
+    <title>Blossom Elegance - Timeless Beauty & Cosmetics</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #FFF0F5;
+        }
+        .header {
+            background-color: #FFFFFF;
+            padding: 10px 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .logo {
+            font-size: 24px;
+            color: #FF69B4;
+            text-decoration: none;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-links a {
+            color: #333;
+            text-decoration: none;
+            font-size: 14px;
+        }
+        .hero {
+            background-image: linear-gradient(to right, #FFB6C1, #FFC0CB);
+            padding: 60px 20px;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .cta-button {
+            background-color: #FF69B4;
+            color: #FFFFFF;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .cta-button:hover {
+            background-color: #FF1493;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 50px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .product-card {
+            background-color: #FFFFFF;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        .product-image {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-title {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        .product-price {
+            font-weight: bold;
+            color: #FF69B4;
+        }
+    </style>
+    </head>
+    <body>
+        <header class="header">
+            <nav class="nav">
+                <a href="/" class="logo">Blossom Elegance</a>
+                <div class="nav-links">
+                    <a href="/new">New</a>
+                    <a href="/best-sellers">Best Sellers</a>
+                    <a href="/shop-all">Shop All</a>
+                    <a href="/collections">Collections</a>
+                    <a href="/offers">Offers</a>
+                    <a href="/rewards">Rewards</a>
+                </div>
+            </nav>
+        </header>
+    
+        <section class="hero">
+            <h1>Blossom Radiance</h1>
+            <p>Embrace Timeless Beauty with a Touch of Elegance</p>
+            <a href="/shop-now" class="cta-button">Shop Now</a>
+        </section>
+    
+        <section class="products">
+            <div class="product-card">
+                <img src="https://replicate.delivery/yhqm/MywHxyUwBAIcNFfygr8Xve5QiintpV2AfsnwnA8rtF7BJN8mA/out-0.webp" alt="Pink floral-inspired blush compact" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Petal Blush Compact</h3>
+                    <p class="product-price">$24.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://replicate.delivery/yhqm/zzwpWfPvT736MyRJUn9cm5mX266gMaD4DdGlpLDt0l7QSDvJA/out-0.webp" alt="Elegant pink perfume bottle with floral design" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Blossom Eau de Parfum</h3>
+                    <p class="product-price">$59.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://replicate.delivery/yhqm/CjHJkchkzp5vOJJeDPhlUCFYLa6t6XkRaiuR0EdFB7TSSDvJA/out-0.webp" alt="Rose-shaped lipstick in a golden case" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Rose Petal Lipstick</h3>
+                    <p class="product-price">$19.99</p>
+                </div>
+            </div>
+            <div class="product-card">
+                <img src="https://replicate.delivery/yhqm/aZjG2cpyeG3zfU8OuoqbBVXm8iDrQFGeJUqPNnXH7oJQJN8mA/out-0.webp" alt="Floral-themed eyeshadow palette with pastel colors" class="product-image">
+                <div class="product-info">
+                    <h3 class="product-title">Garden Dreams Eyeshadow Palette</h3>
+                    <p class="product-price">$39.99</p>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+           //feito por Fellas e Matheus 2ºE
+            const productCards = document.querySelectorAll('.product-card');
+            productCards.forEach(card => {
+                card.addEventListener('mouseover', () => {
+                    card.style.transform = 'translateY(-10px)';
+                });
+                card.addEventListener('mouseout', () => {
+                    card.style.transform = 'translateY(0)';
+                });
+            });
+        </script>
+    </body>
+    </html>
